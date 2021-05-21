@@ -8,12 +8,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Text("I am Rich"),
           backgroundColor: Colors.blue,
         ),
-        body: Center(child: Image(image: AssetImage("images/pluto-savings.png"),),),
+        body: Center(
+          child: Image(
+            image: AssetImage("images/pluto-savings.png"),
+          ),
+        ),
       ),
     );
   }
